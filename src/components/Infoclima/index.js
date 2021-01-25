@@ -1,23 +1,39 @@
 import React from 'react';
 
+import './styles.css'
 function Infoclima(props){
+
     const { data } = props
+
+
+    const infoDate = (dTime) => {
+        let months = [ "Janeiro", "Fevereiro", "Março", "Abriu", "Maio", "Junho", "Julio", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        let days = [ "Domingo","Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
+        let day = days[dTime.getDay()];
+        let date = dTime.getDate();
+        let month = months[dTime.getMonth()];
+        let year = dTime.getFullYear();
+
+        return `${day}, ${date} ${month} ${year} `
+
+    }
     return(
-        <div className="infoclima">
-            <div className="card-infoclima">
+        <div className="container-info">
+            <div className="container-card">
+                <div className="info-city">
                 Clima em {data.name}
+                </div>
             
-            <br/>
-            <span className="card-title">
-               As  {new Date().toLocaleTimeString()}
+            
+            <span className="date-info">
+                 {infoDate(new Date())}
             </span>
-            <h2>{ Math.floor(data.main.temp - 273.15)}
+            <span className="graus-info">
+                { Math.floor(data.main.temp - 273.15)}
             <sup>o</sup>
-            </h2>
-            <span className="main-cl">
-                {data.weather[0].main}
             </span>
-            <br/>
+        
             <span className="description-cli">
                 {data.weather[0].description}
             </span>

@@ -1,0 +1,83 @@
+.container-info{
+    width: 100%;
+    align-items: center;
+    
+}
+
+.container-card{
+    align-items: center;
+}
+
+.container-card .info-city{
+    
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 3px 3px rgba(50,50,70, 0.4);
+}
+
+.container-card .date-info{
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.graus-info{
+    width:90%;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    background-color: rgba(555, 555, 555, 0.2);
+    border-radius: 17px;
+
+    padding: 15px 15px;
+
+    color: #fff;
+    font-size: 30px;
+
+
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    text-align: center;
+}
+
+.description-cli{
+    font-size: 20px;
+    padding: 3px;
+}
+
+.detalhes-cli{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    
+    
+}
+
+.secaone-cli{
+    margin-right: 1px;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(555, 555, 555, 0.2);
+    border-radius: 10px;
+    
+}
+.secaone-cli td{
+    text-align: justify;
+}
+
+.secaotwo-cli{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 8px;
+    text-align: center;
+    background-color: rgba(555, 555, 555, 0.2);
+    border-radius: 10px;
+}
+
+.secaotwo-cli td{
+    text-align: justify;
+}
+
